@@ -82,3 +82,19 @@ and it's been inspired by many colorschemes, in particular Ayu and Gruvbox.
 
 <img width="1326" title="Melange Dark with IBM Plex Mono" alt="Screenshot of code listing using melange dark" src="https://user-images.githubusercontent.com/30883030/212500086-a6709213-c82a-4eca-8f3f-67fdc5c26f23.png">
 <img width="1326" title="Melange Light with IBM Plex Mono" alt="Screenshot of code listing using melange light" src="https://user-images.githubusercontent.com/30883030/212500082-b67699c7-09dd-42f5-ac7e-ee71ca41c5c6.png">
+
+## Doom Emacs
+
+Two Emacs themes are provided in [`emacs/`](emacs/):
+`doom-melange-theme.el` for the dark variant and
+`doom-melange-light-theme.el` for the light variant.
+Copy this directory into your `load-path` or add its path to
+`custom-theme-load-path` and load the desired theme:
+
+```elisp
+(add-to-list 'custom-theme-load-path "/path/to/melange-nvim/emacs")
+(load-theme 'doom-melange t) ; or 'doom-melange-light
+```
+
+The themes define many faces for Org mode, such as custom colors for
+TODO keywords, agenda entries, habit tracking states and heading levels.
